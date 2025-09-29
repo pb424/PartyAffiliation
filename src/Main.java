@@ -1,4 +1,3 @@
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
@@ -6,13 +5,13 @@ public class Main {
         System.out.println("Enter a political party, D, R, I, or Other");
         Scanner in = new Scanner(System.in);
         String partyAffiliation = in.next();
-        if(Objects.equals(partyAffiliation, "D")){
+        if(partyAffiliation.equals("D")) {
             System.out.println("You get a Democratic Donkey.");
         }
-        else if (Objects.equals(partyAffiliation, "R")) {
+        else if (partyAffiliation.equals("R")) {
             System.out.println("You get a Republican Elephant.");
         }
-        else if (Objects.equals(partyAffiliation, "I")) {
+        else if (partyAffiliation.equals("I")){
             System.out.println("You get an Independent Man.");
         }
         else {
